@@ -1,0 +1,9 @@
+{
+  "name": "atlantisbot.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/johnvictorfs/atlantisbotjs",
+  "author": "John Victor",
+  "license": "MIT",
+  "private": false
+}
