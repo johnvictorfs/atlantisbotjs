@@ -1,7 +1,7 @@
 {
   "name": "atlantisbot.js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/johnvictorfs/atlantisbotjs",
   "author": "John Victor",
   "license": "MIT",
@@ -11,7 +11,8 @@
     "test": "echo \"Exiting, no tests specified\" && exit 0",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "yarn run lint --fix",
-    "prepare": "yarn run husky install"
+    "prepare": "yarn run husky install",
+    "postinstall": "cd modules/eslint-plugin-discordjs && yarn run prepare"
   },
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
@@ -20,10 +21,12 @@
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
+    "@types/node": "^16.11.9",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-discordjs": "link:./modules/eslint-plugin-discordjs",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
