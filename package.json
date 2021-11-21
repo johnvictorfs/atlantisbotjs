@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "repository": "https://github.com/johnvictorfs/atlantisbotjs",
   "author": "John Victor",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "private": false,
   "scripts": {
     "bot": "nodemon src/index.ts",
