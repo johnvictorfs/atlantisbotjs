@@ -4,7 +4,7 @@ export enum Environment {
   TEST = 'test'
 }
 
-export interface IProcessEnv  {
+export interface IProcessEnv {
   BOT_TOKEN: string
   APPLICATION_ID: string
   ENVIRONMENT: Environment
